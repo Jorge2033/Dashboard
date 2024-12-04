@@ -1,30 +1,27 @@
+import React from 'react';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 
-interface Indicator {
-    title?: string;
-    subtitle?: string;
-    value?: string;
+interface IndicatorProps {
+    title: string;
+    subtitle: string;
+    value: string;
 }
 
-export default function IndicatorWeather(config: Indicator) {
+export default function IndicatorWeather({ title, subtitle, value }: IndicatorProps) {
     return (
         <Paper
             sx={{
-                p: 2,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
+                padding: 2,
+                textAlign: 'center',
             }}
         >
-            <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                {config.title}
+            <Typography variant="h6" color="primary">
+                {title}
             </Typography>
-            <Typography component="p" variant="h4">
-                {config.value}
-            </Typography>
-            <Typography color="text.secondary" sx={{ flex: 1 }}>
-                {config.subtitle}
+            <Typography variant="h4">{value}</Typography>
+            <Typography variant="body2" color="text.secondary">
+                {subtitle}
             </Typography>
         </Paper>
     );
