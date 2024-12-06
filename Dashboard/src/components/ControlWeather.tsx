@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import  { useState, useRef } from 'react';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -10,7 +10,7 @@ import { SelectChangeEvent } from '@mui/material/Select';
 
 export default function ControlWeather() {
     // Hooks para estado y referencia
-    const [selected, setSelected] = useState(-1);
+    const [, setSelected] = useState(-1);
     const descriptionRef = useRef<HTMLDivElement>(null);
 
     // Datos para las opciones del selector

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Paper from '@mui/material/Paper';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
