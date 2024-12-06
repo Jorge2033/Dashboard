@@ -2,7 +2,7 @@
   "name": "dashboard",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://{Jorge2033}.github.io/Dashboard",
+  "homepage": "https://Jorge2033.github.io/Dashboard",
   "type": "module",
   "scripts": {
     "dev": "vite",
