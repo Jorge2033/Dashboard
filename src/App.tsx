@@ -80,7 +80,7 @@ function App() {
         <Container className={`app-container ${isDayMode ? 'day-mode' : 'night-mode'}`}>
             <Box display="flex" justifyContent="space-between" alignItems="center" mb={4}>
                 <Typography variant="h4" fontWeight="bold">
-                    🌟 Weather Dashboard
+                    🌟 SkyCast
                 </Typography>
                 <Box display="flex" alignItems="center">
                     <Typography variant="body1" mr={2}>
